@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             donors: 8,
             supporters: 5,
             total: 13,
-            history: [10, 13],
+            history: [8, 9, 10, 13],
             color: '#e70013'
         },
         {
@@ -18,16 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
             donors: 10,
             supporters: 7,
             total: 17,
-            history: [9, 17],
+            history: [4, 7 , 9, 17],
             color: '#000000'
         },
         {
             id: 'palmeiras',
             name: 'Palmeiras',
-            donors: 1,
+            donors: 0,
             supporters: 0,
-            total: 1,
-            history: [1, 1],
+            total: 0,
+            history: [1, 1, 0, 0],
             color: '#006437'
         },
         {
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             donors: 5,
             supporters: 2,
             total: 7,
-            history: [5, 7],
+            history: [0, 1, 5, 7],
             color: '#000000'
         },
         {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             donors: 1,
             supporters: 1,
             total: 2,
-            history: [1, 2],
+            history: [0,1 ,1, 2],
             color: '#792f40'
         }
     ];
