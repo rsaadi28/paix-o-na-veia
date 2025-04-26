@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paixão na Veia - Projeto de Doação de Sangue</title>
+    <meta name="description" content="Paixão na Veia é um projeto de doação de sangue que promove a competição saudável entre times para salvar vidas.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/additional.css">
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo-link">
+                <img src="images/logo.png" alt="Paixão na Veia" class="logo">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#competicao">Competição</a></li>
+                    <li><a href="#proximo-evento">Próximo Evento</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Doe Sangue, Salve Vidas</h1>
+            <p>O Paixão na Veia é um projeto que une a paixão pelo esporte com a solidariedade. A cada três meses, representantes de cada time se reúnem para doar sangue e competir por uma causa maior: salvar vidas.</p>
+            <div class="hero-buttons">
+                <a href="#proximo-evento" class="btn">Próximo Evento</a>
+                <a href="#como-funciona" class="btn btn-outline">Como Participar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre o Projeto</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>O projeto "Paixão na Veia" nasceu da união entre a paixão pelo futebol e a necessidade constante de doações de sangue nos hemocentros brasileiros. Nossa missão é incentivar a doação regular de sangue através de uma competição saudável entre times de futebol.</p>
+                    <p>A cada três meses, organizamos eventos onde torcedores e representantes de diversos times se reúnem para doar sangue. O time que conseguir mobilizar o maior número de doadores é declarado vencedor do evento, mas a verdadeira vitória está nas vidas que são salvas com cada doação.</p>
+                    <p>Desde o início do projeto, já conseguimos coletar milhares de bolsas de sangue e criar uma comunidade engajada de doadores regulares. Acreditamos que unindo a paixão pelo esporte com a solidariedade, podemos fazer a diferença na vida de muitas pessoas que necessitam de transfusões sanguíneas.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x350" alt="Doação de Sangue">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section id="como-funciona" class="section how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>Como Funciona</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Evento no Hemorio</h3>
+                    <p>A cada três meses, marcamos uma data no Hemorio (Hemocentro do Rio de Janeiro) para que torcedores compareçam com as camisas dos seus times. Você pode ser um doador ou um apoiador!</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Represente seu Time</h3>
+                    <p>Vista a camisa do seu time do coração e compareça ao evento. Mesmo que você não possa doar sangue, sua presença como apoiador também conta pontos para seu time!</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Pontue a Qualquer Momento</h3>
+                    <p>Fora da data do evento oficial, você também pode doar sangue em qualquer hemocentro e enviar seu comprovante através do formulário de contato para pontuar para seu time.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Celebre a Vitória</h3>
+                    <p>Ao final de cada período trimestral, o time com maior número total de participantes (doadores + apoiadores) é declarado vencedor do evento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competição Section -->
+    <section id="competicao" class="section competition">
+        <div class="container">
+            <div class="section-title">
+                <h2>Competição entre Times</h2>
+            </div>
+            <p>A cada três meses, times de todo o Brasil competem para ver quem consegue mobilizar o maior número de doadores. Confira o desempenho dos principais times no último evento:</p>
+            <div class="teams" id="ranking-container">
+                <!-- Conteúdo gerado dinamicamente pelo JavaScript -->
+            </div>
+            
+            <div class="chart-container" style="position: relative; height:300px; width:100%; max-width:800px; margin:40px auto 0;">
+                <canvas id="teams-chart"></canvas>
+            </div>
+            <div style="margin-top: 40px;">
+                <a href="#contato" class="btn">Inscreva seu Time</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Próximo Evento Section -->
+    <section id="proximo-evento" class="section next-event">
+        <div class="container">
+            <div class="section-title">
+                <h2>Próximo Evento</h2>
+            </div>
+            <div class="event-date">
+                <h3>Data do Próximo Evento</h3>
+                <p id="next-event-date">1 de Julho de 2025</p>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="countdown-days">00</div>
+                        <div class="countdown-label">Dias</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="countdown-hours">00</div>
+                        <div class="countdown-label">Horas</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="countdown-minutes">00</div>
+                        <div class="countdown-label">Minutos</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="countdown-seconds">00</div>
+                        <div class="countdown-label">Segundos</div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-details">
+                <p>Nosso próximo evento de doação de sangue está se aproximando! Durante todo o mês, representantes de cada time poderão comparecer aos hemocentros parceiros para realizar suas doações.</p>
+                <p>Para participar, basta reunir seu grupo, agendar a doação e comparecer ao hemocentro informando que faz parte do projeto "Paixão na Veia" e qual time você representa.</p>
+                <p>Lembre-se: cada doação pode salvar até 4 vidas! Além disso, o time com maior número de doadores será reconhecido como campeão do evento.</p>
+                <div style="margin-top: 30px;">
+                    <a href="#contato" class="btn btn-submit">Quero Participar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria Section -->
+    <section id="galeria" class="section gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galeria de Eventos</h2>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x400" alt="Evento de Doação">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x400" alt="Evento de Doação">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x400" alt="Evento de Doação">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x400" alt="Evento de Doação">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x400" alt="Evento de Doação">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://via.placeholder.com/400x400" alt="Evento de Doação">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contato</h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p>Av. Exemplo, 1234</p>
+                            <p>São Paulo - SP</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <p>(11) 1234-5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p>contato@paixaonaveia.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <p>Segunda a Sexta: 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form" action="https://formspree.io/f/rsaadi28@gmail.com" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="nome" class="form-control" placeholder="Nome Completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="telefone" class="form-control" placeholder="Telefone">
+                        </div>
+                        <div class="form-group">
+                            <select name="assunto" class="form-control" required>
+                                <option value="" disabled selected>Selecione o Assunto</option>
+                                <option value="participacao">Quero participar com meu time</option>
+                                <option value="parceria">Proposta de parceria</option>
+                                <option value="duvida">Dúvidas sobre o projeto</option>
+                                <option value="outro">Outro assunto</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="mensagem" class="form-control" placeholder="Mensagem" required></textarea>
+                        </div>
+                        <input type="hidden" name="_subject" value="Contato do site Paixão na Veia">
+                        <input type="hidden" name="_next" value="https://jzluvtyt.manus.space/obrigado.html">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
+                        </div>
+                        <div id="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Paixão na Veia">
+                <p>Unindo a paixão pelo esporte com a solidariedade para salvar vidas através da doação de sangue.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#sobre">Sobre o Projeto</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#competicao">Competição</a></li>
+                    <li><a href="#proximo-evento">Próximo Evento</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Informações Úteis</h3>
+                <ul>
+                    <li><a href="#">Requisitos para Doação</a></li>
+                    <li><a href="#">Hemocentros Parceiros</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2025 Paixão na Veia. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/competition.js"></script>
+    <script src="js/donation-form.js"></script>
+    <script src="js/sync-data.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>

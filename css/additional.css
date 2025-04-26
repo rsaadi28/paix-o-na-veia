@@ -1,0 +1,192 @@
+/* Estilos adicionais para o projeto Paixão na Veia */
+
+/* Requisitos para doação */
+.requisitos {
+  background-color: var(--gray-color);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.requisitos h3 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.requisitos-list {
+  list-style: none;
+}
+
+.requisitos-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+}
+
+.requisitos-list li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Benefícios da doação */
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.beneficio {
+  flex: 1;
+  min-width: 250px;
+  margin: 15px;
+  padding: 25px;
+  background-color: var(--light-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.beneficio:hover {
+  transform: translateY(-10px);
+}
+
+.beneficio-icon {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.beneficio h3 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+/* Estatísticas */
+.estatisticas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.estatistica {
+  text-align: center;
+  margin: 20px;
+}
+
+.estatistica-numero {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.estatistica-texto {
+  font-size: 18px;
+}
+
+/* Depoimentos */
+.depoimentos {
+  margin-top: 50px;
+}
+
+.depoimento {
+  background-color: var(--light-color);
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.depoimento:before {
+  content: '\201C';
+  font-size: 80px;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  color: rgba(167, 0, 0, 0.1);
+}
+
+.depoimento-texto {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.depoimento-autor {
+  display: flex;
+  align-items: center;
+}
+
+.depoimento-autor img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.depoimento-info h4 {
+  margin-bottom: 5px;
+}
+
+.depoimento-info p {
+  color: #777;
+}
+
+/* Parceiros */
+.parceiros {
+  margin-top: 50px;
+}
+
+.parceiros-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.parceiro-logo {
+  margin: 20px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.parceiro-logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.parceiro-logo img {
+  max-width: 150px;
+  max-height: 80px;
+}
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+  .beneficio {
+    flex: 100%;
+  }
+  
+  .estatistica {
+    flex: 100%;
+    margin: 10px 0;
+  }
+  
+  .estatistica-numero {
+    font-size: 36px;
+  }
+  
+  .estatistica-texto {
+    font-size: 16px;
+  }
+}
