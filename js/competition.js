@@ -6,55 +6,46 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 'flamengo',
             name: 'Flamengo',
-            donors: 78,
-            supporters: 25,
-            total: 103,
-            history: [65, 85, 103],
+            donors: 8,
+            supporters: 5,
+            total: 13,
+            history: [10, 13],
             color: '#e70013'
         },
         {
             id: 'vasco',
             name: 'Vasco',
-            donors: 65,
-            supporters: 18,
-            total: 83,
-            history: [50, 70, 83],
+            donors: 10,
+            supporters: 7,
+            total: 17,
+            history: [9, 17],
             color: '#000000'
-        },
-        {
-            id: 'corinthians',
-            name: 'Corinthians',
-            donors: 52,
-            supporters: 20,
-            total: 72,
-            history: [40, 60, 72],
-            color: '#000000'
-        },
-        {
-            id: 'sao-paulo',
-            name: 'São Paulo',
-            donors: 47,
-            supporters: 15,
-            total: 62,
-            history: [35, 50, 62],
-            color: '#e30613'
         },
         {
             id: 'palmeiras',
             name: 'Palmeiras',
-            donors: 45,
-            supporters: 12,
-            total: 57,
-            history: [30, 45, 57],
+            donors: 1,
+            supporters: 0,
+            total: 1,
+            history: [1, 1],
             color: '#006437'
+        },
+        {
+            id: 'botafogo',
+            name: 'Botafogo',
+            donors: 5,
+            supporters: 2,
+            total: 7,
+            history: [5, 7],
+            color: '#000000'
         },
         {
             id: 'fluminense',
             name: 'Fluminense',
-            donors: 40,
-            supporters: 15,
-            total: 55,
-            history: [25, 40, 55],
+            donors: 1,
+            supporters: 1,
+            total: 2,
+            history: [1, 2],
             color: '#792f40'
         }
     ];
@@ -120,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!chartContainer || typeof Chart === 'undefined') return;
         
         // Preparar dados para o gráfico
-        const labels = ['Evento 1', 'Evento 2', 'Evento Atual'];
+        const labels = ['07/04/2024', '10/07/2024', '03/10/2024', '05/01/2025'];
         const datasets = teamsData.map(team => {
             return {
                 label: team.name,
@@ -132,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 fill: false,
                 pointBackgroundColor: '#fff',
                 pointBorderColor: team.color,
-                pointBorderWidth: 2,
+                pointBorderWidth: 3,
                 pointRadius: 5,
                 pointHoverRadius: 7
             };
@@ -151,6 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     legend: {
                         position: 'top',
                         labels: {
+                            color: '#fff',
                             font: {
                                 size: 14,
                                 weight: 'bold'
@@ -162,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     },
                     title: {
                         display: true,
+                        color: '#fff',
                         text: 'Evolução dos Times nos Últimos Eventos',
                         font: {
                             size: 18,
